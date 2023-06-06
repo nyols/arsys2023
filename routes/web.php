@@ -23,6 +23,8 @@ Route::get('/', function () {
     
 });
 
+Route::resource('/todos', \App\Http\Contollers\TodoController::class);
+
 Auth::routes();
 
 
@@ -39,7 +41,6 @@ Route::get('/user/profile/edit', \App\Http\Livewire\Arsys\User\Profile\Edit\Idx:
 Route::get('/admin/user', \App\Http\Livewire\Arsys\Admin\User\Idx::class)->name('arsys.admin.user');
 Route::get('/admin/config/institution', \App\Http\Livewire\Arsys\Admin\Config\Institution\Idx::class)->name('arsys.admin.config.institution');
 
-
-
+Route::get('/tdl/landing-page', \App\Http\Livewire\Tdl\Idx::class)->name('tdl.home');
 
 

@@ -243,6 +243,13 @@ return [
         ],
 
         [
+            'text'       => 'To-Do List',
+            'route'      => 'tdl.home',
+            'icon'      => 'far fa-fw fa-heart',
+            //'roles'     => ['reviewer', 'committee','author'],
+        ],
+
+        [
             'text'       => 'Log out',
             'route'        => 'user.refresh',
             'icon'      => 'far fa-fw fa-file',
